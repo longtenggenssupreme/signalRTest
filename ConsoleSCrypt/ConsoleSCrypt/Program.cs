@@ -25,7 +25,6 @@ namespace ConsoleSCrypt
             //Console.WriteLine(BitConverter.ToString(salt2));
             //byte[] result = SCrypt.ComputeDerivedKey(Encoding.UTF8.GetBytes(pwd), salt, 4, 8, 2, 2, 5);
             //Console.WriteLine($"加密以后的密文:{BitConverter.ToString(result).Replace("-","").ToLower()}");
-
             #endregion
 
             #region SCrypt.Net.SCrypt
