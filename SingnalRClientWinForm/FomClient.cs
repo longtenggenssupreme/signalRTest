@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNet.SignalR.Client;
+﻿using DevOne.Security.Cryptography.BCrypt;
+using Microsoft.AspNet.SignalR.Client;
 using Newtonsoft.Json;
 using NLog;
 using System;
