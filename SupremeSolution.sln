@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingnalRServer", "SingnalRS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBCrypt", "ConsoleBCrypt\ConsoleBCrypt\ConsoleBCrypt.csproj", "{BF9F6EA3-05E3-41F2-B579-39A8E10FEACD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSCrypt", "ConsoleSCrypt\ConsoleSCrypt\ConsoleSCrypt.csproj", "{9FE2D619-BF69-4CCB-A470-6118BED4D141}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BF9F6EA3-05E3-41F2-B579-39A8E10FEACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF9F6EA3-05E3-41F2-B579-39A8E10FEACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF9F6EA3-05E3-41F2-B579-39A8E10FEACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FE2D619-BF69-4CCB-A470-6118BED4D141}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FE2D619-BF69-4CCB-A470-6118BED4D141}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FE2D619-BF69-4CCB-A470-6118BED4D141}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FE2D619-BF69-4CCB-A470-6118BED4D141}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
