@@ -1,6 +1,7 @@
 ﻿using CryptSharp.Utility;
 using System;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace ConsoleSCrypt
 {
@@ -8,9 +9,28 @@ namespace ConsoleSCrypt
     {
         static void Main(string[] args)
         {
+            #region SCrypt对密码进行加密及密码验证
+            // //using CryptSharp.Utility; 使用SCrypt的加密算法
+            //Console.WriteLine("SCrypt");
+            //string pwd = "SCrypt明文信息";
+            ////HashAlgorithm hash = HashAlgorithm.Create("MD5");
+            //HashAlgorithm hash = MD5.Create();
+            //byte[] ms5bytes = hash.ComputeHash(Encoding.UTF8.GetBytes(pwd));
+            //Console.WriteLine($"ms5bytes :{BitConverter.ToString(ms5bytes).Replace("-",string.Empty)}");
+            //byte[] salt = new byte[10];
+            //byte[] salt2 = new byte[4];
+            //RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
+            //rng.GetBytes(salt);
+            //rng.GetBytes(salt2);
+            //Console.WriteLine(BitConverter.ToString(salt2));
+            //byte[] result = SCrypt.ComputeDerivedKey(Encoding.UTF8.GetBytes(pwd), salt, 4, 8, 2, 2, 5);
+            //Console.WriteLine($"加密以后的密文:{BitConverter.ToString(result).Replace("-","").ToLower()}");
+
+            #endregion
+
             #region SCrypt.Net.SCrypt
 
-            Console.WriteLine("SCrypt.Net");
+            Console.WriteLine("SCrypt.Net.BCrypt");
             Scrypt.ScryptEncoder scrypt = new Scrypt.ScryptEncoder();
             Scrypt.ScryptEncoder scrypt1 = new Scrypt.ScryptEncoder(4, 8, 1);
             Scrypt.ScryptEncoder scrypt2 = new Scrypt.ScryptEncoder(8, 16, 1, RandomNumberGenerator.Create());
