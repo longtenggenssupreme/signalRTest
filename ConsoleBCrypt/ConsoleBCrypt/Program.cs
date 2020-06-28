@@ -20,8 +20,9 @@ namespace ConsoleBCrypt
             // Console.WriteLine($"明文和加密以后的密文是否匹配:{isMatchpasswordAndpwd}"); 
             #endregion
 
+            #region BCrypt.Net.BCrypt
 
-            Console.WriteLine("BCryptHelper");
+            Console.WriteLine("BCrypt.Net.BCrypt");
             string salt = BCrypt.Net.BCrypt.GenerateSalt(28);
             Console.WriteLine($"产生随机盐 salt:{salt}");
             salt = BCrypt.Net.BCrypt.GenerateSalt();
@@ -30,16 +31,17 @@ namespace ConsoleBCrypt
             Console.WriteLine($"明文:{password}");
             string pwd = BCrypt.Net.BCrypt.HashPassword(password);
             Console.WriteLine($"加密以后的密文:{pwd}");
-            pwd = BCrypt.Net.BCrypt.HashPassword(password,4);
+            pwd = BCrypt.Net.BCrypt.HashPassword(password, 4);
             Console.WriteLine($"加密以后的密文:{pwd}");
             pwd = BCrypt.Net.BCrypt.HashPassword(password, salt);
             Console.WriteLine($"加密以后的密文:{pwd}");
             pwd = BCrypt.Net.BCrypt.HashString("密文");
             Console.WriteLine($"加密以后的密文:{pwd}");
-            pwd = BCrypt.Net.BCrypt.HashString("密文",4);
+            pwd = BCrypt.Net.BCrypt.HashString("密文", 4);
             Console.WriteLine($"加密以后的密文:{pwd}");
-           bool isMatchpasswordAndpwd = BCrypt.Net.BCrypt.Verify("密文", pwd);
-            Console.WriteLine($"明文和加密以后的密文是否匹配:{isMatchpasswordAndpwd}");
+            bool isMatchpasswordAndpwd = BCrypt.Net.BCrypt.Verify("密文", pwd);
+            Console.WriteLine($"明文和加密以后的密文是否匹配:{isMatchpasswordAndpwd}"); 
+            #endregion
 
             //string salt = BCrypt.Net.BCrypt.GenerateSalt
             //Console.WriteLine($"产生随机盐 salt:{salt}");
