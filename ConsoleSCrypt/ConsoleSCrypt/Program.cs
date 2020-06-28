@@ -8,8 +8,6 @@ namespace ConsoleSCrypt
     {
         static void Main(string[] args)
         {
-            
-
             #region SCrypt.Net.SCrypt
 
             Console.WriteLine("SCrypt.Net");
